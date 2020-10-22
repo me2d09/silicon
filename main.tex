@@ -18,27 +18,7 @@
 %  3)  latex apssamp.tex
 %  4)  latex apssamp.tex
 %
-\documentclass[%
- reprint,
-%superscriptaddress,
-%groupedaddress,
-%unsortedaddress,
-%runinaddress,
-%frontmatterverbose, 
-%preprint,
-%preprintnumbers,
-%nofootinbib,
-%nobibnotes,
-%bibnotes,
- amsmath,amssymb,
- aps,
-%pra,
-%prb,
-%rmp,
-%prstab,
-%prstper,
-%floatfix,
-]{revtex4-2}
+\documentclass[aps,prx,reprint,amsmath,amssymb,superscriptaddress,showpacs]{revtex4-1}
 
 \usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
@@ -60,19 +40,16 @@
 
 \preprint{APS/123-QED}
 
-\title{Manuscript Title:\\with Forced Linebreak}% Force line breaks with \\
-\thanks{A footnote to the article title}%
+\title{An Exercise in Open Data: Triple Axis Data on Si(crystal dir.)}% Force line breaks with \\
+
 
 \author{Petr Cermak}
 \email{cermak@mag.mff.cuni.cz}
  \affiliation{Charles University}
  
-\author{Second Author}%
- \email{Second.Author@institution.edu}
-\affiliation{%
- Authors' institution and/or address
-}%
-
+\author{J. K. Jochum}
+\address{Heinz Maier-Leibnitz Zentrum (MLZ), Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
+\email[]{jjochum@frm2.tum.de}
 \collaboration{Czech-Bavarian Mini-School on large scale facilities and open data}%\noaffiliation
 
 \author{Charlie Author}
@@ -148,7 +125,7 @@ This data analysis would have been much easier, if together with the data, some 
 \begin{thebibliography}{9}
 
 \bibitem{ILL}
-\bibitem{arxiv} arXiv.org, \url{https://arxiv.org/}
+\bibitem{arXiv} arXiv.org, \url{https://arxiv.org/}
 \bibitem{figshare} figshare, \url{https://figshare.com/}
 \bibitem{IN3} IN3, \url{https://www.ill.eu/users/instruments/instruments-list/in3/description/instrument-layout/}
 \bibitem{foster} Foster Open Data, \url{https://www.fosteropenscience.eu/}
