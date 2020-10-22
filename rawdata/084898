@@ -1,0 +1,74 @@
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+  084898       2       0                                                        
+ILL TAS data in the new ASCII format follow after the line VV..V                
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      80                                                                        
+IN3   steffens    17-Sep-14 15:43:58                                            
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+INSTR: IN3
+EXPNO: TEST-2385
+USER_: steffens
+LOCAL: ZBIRI
+FILE_: 084898
+DATE_: 17-Sep-14 15:43:58
+TITLE: HSC17 Hercules practical course
+TYPE_: tas
+COMND: sc a3 57.7 da3 .3 np 25
+POSQE: QH=  -1.5623, QK=  -1.7032, QL=  -1.6328, EN=  -0.0136, UN=meV
+CURVE: MONO= auto, ANA= manu
+STEPS: A3=   0.3000
+PARAM: GONIO= 0
+PARAM: DM=   3.35500, DA=   3.35500, KFIX=   2.66325
+PARAM: SM= -1, SS= -1, SA=  1, FX=  2
+PARAM: ALF1= 600.00, ALF2= 600.00, ALF3= 600.00, ALF4= 600.00
+PARAM: BET1= 600.00, BET2= 600.00, BET3= 600.00, BET4= 600.00
+PARAM: ETAM=  35.00, ETAA=  35.00
+PARAM: AS=   5.43100, BS=   5.43100, CS=   5.43100
+PARAM: AA=  90.00000, BB=  90.00000, CC=  90.00000, ETAS=   1.00000
+PARAM: AX=  1.000, AY=  1.000, AZ=  1.000
+PARAM: BX=  1.000, BY= -1.000, BZ=  0.000
+VARIA: I1      =   0.03, I2      =   0.03, I3      =   0.04, I4      =   0.03
+VARIA: A1      = -20.60, A2      = -41.19, A3      =  54.10, A4      = -75.87
+VARIA: A5      =  20.61, A6      =  41.17, RM      =   6.13, GM      =  64.02
+VARIA: TM      =   4.69, RAV     =   6.21, RAH     =   8.99, GU      =   0.04
+VARIA: GL      =  -0.04, TU      = -26.62, TL      = -22.91
+VARIA: A3P     =-1941960.25, D1T     =  20.62, D1B     =  19.69
+VARIA: D1R     =  21.21, D1L     =  22.86, D2T     =  19.69, D2B     =  19.38
+VARIA: D2R     =  21.65, D2L     =  20.77
+ZEROS: A1      =   1.82, A2      =   2.71, A3      =-180.00, A4      =   0.70
+ZEROS: A5      =  -1.45, A6      =   0.24, RM      =   0.00, GM      =   0.00
+ZEROS: TM      =   0.00, RAV     =   0.00, RAH     =   0.00, GU      =   0.00
+ZEROS: GL      =   0.00, TU      =   0.00, TL      =   0.00, A3P     =   0.00
+ZEROS: D1T     =   0.00, D1B     =   0.00, D1R     =   0.00, D1L     =   0.00
+ZEROS: D2T     =   0.00, D2B     =   0.00, D2R     =   0.00, D2L     =   0.00
+PARAM: TI=      1.00
+PARAM: TT=      1.60, RT=      1.75
+PARAM: REACTOR= 0.00
+FORMT:
+DATA_:
+  PNT        A3        M1        M2      TIME      CNTS         A3         A4         TT 
+   1      54.1000    21077        0     1.00        16       54.100    -75.870      1.602 
+   2      54.4000    20807        0     1.00        18       54.400    -75.870      1.602 
+   3      54.7000    21173        0     1.00        16       54.700    -75.870      1.602 
+   4      54.9900    21209        0     1.00        11       54.990    -75.870      1.602 
+   5      55.3000    21138        0     1.00        21       55.300    -75.870      1.602 
+   6      55.5900    21237        0     1.00        23       55.590    -75.870      1.602 
+   7      55.9000    21188        0     1.00        26       55.900    -75.870      1.602 
+   8      56.1900    21336        0     1.00       118       56.190    -75.870      1.602 
+   9      56.4900    21061        0     1.00       487       56.490    -75.870      1.602 
+  10      56.7900    20939        0     1.00       979       56.790    -75.870      1.602 
+  11      57.0900    20993        0     1.00      1204       57.090    -75.870      1.602 
+  12      57.4000    21366        0     1.00      1130       57.400    -75.870      1.602 
+  13      57.6900    21079        0     1.00      1363       57.690    -75.870      1.602 
+  14      58.0000    21449        0     1.00      1053       58.000    -75.870      1.602 
+  15      58.2900    21334        0     1.00        47       58.290    -75.870      1.602 
+  16      58.6000    21462        0     1.00        21       58.600    -75.870      1.602 
+  17      58.8900    20966        0     1.00        18       58.890    -75.870      1.602 
+  18      59.1900    21244        0     1.00        24       59.190    -75.870      1.602 
+  19      59.4900    21112        0     1.00        21       59.490    -75.870      1.602 
+  20      59.7900    21072        0     1.00        22       59.790    -75.870      1.602 
+  21      60.1000    20978        0     1.00        15       60.100    -75.870      1.602 
+  22      60.3900    21065        0     1.00        18       60.390    -75.870      1.602 
+  23      60.7000    21225        1     1.00        14       60.700    -75.870      1.602 
+  24      60.9900    20922        0     1.00        12       60.990    -75.870      1.602 
+  25      61.2900    21232        0     1.00        16       61.290    -75.870      1.602 

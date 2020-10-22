@@ -1,0 +1,64 @@
+RRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+  084884       2       0                                                        
+ILL TAS data in the new ASCII format follow after the line VV..V                
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+      80                                                                        
+IN3   steffens    17-Sep-14 13:41:19                                            
+VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV
+INSTR: IN3
+EXPNO: TEST-2385
+USER_: steffens
+LOCAL: ZBIRI
+FILE_: 084884
+DATE_: 17-Sep-14 13:41:19
+TITLE: HSC17 Hercules practical course
+TYPE_: tas
+COMND: sc a3 67.15 da3 0.2 np 15
+POSQE: QH=   3.0008, QK=   0.0000, QL=  -0.0512, EN=  -0.0136, UN=meV
+CURVE: MONO= auto, ANA= manu
+STEPS: A3=   0.2000
+PARAM: GONIO= 0
+PARAM: DM=   3.35500, DA=   3.35500, KFIX=   2.66325
+PARAM: SM= -1, SS= -1, SA=  1, FX=  2
+PARAM: ALF1= 600.00, ALF2= 600.00, ALF3= 600.00, ALF4= 600.00
+PARAM: BET1= 600.00, BET2= 600.00, BET3= 600.00, BET4= 600.00
+PARAM: ETAM=  35.00, ETAA=  35.00
+PARAM: AS=   9.55240, BS=   9.55240, CS=   7.57400
+PARAM: AA=  90.00000, BB=  90.00000, CC= 120.00000, ETAS=   1.00000
+PARAM: AX= -1.000, AY=  0.000, AZ=  0.000
+PARAM: BX=  0.000, BY=  0.000, BZ= -1.000
+VARIA: I1      =   0.03, I2      =   0.03, I3      =   0.04, I4      =   0.03
+VARIA: A1      = -20.60, A2      = -41.19, A3      =  65.75, A4      = -50.69
+VARIA: A5      =  20.61, A6      =  41.17, RM      =   6.13, GM      =  64.02
+VARIA: TM      =   4.67, RAV     =   6.21, RAH     =   8.99, GU      =   1.52
+VARIA: GL      =  -0.28, TU      = -26.20, TL      = -22.55
+VARIA: A3P     =-1941960.25, D1T     =  20.62, D1B     =  19.69
+VARIA: D1R     =  21.21, D1L     =  22.86, D2T     =  19.69, D2B     =  19.38
+VARIA: D2R     =  21.65, D2L     =  20.77
+ZEROS: A1      =   1.82, A2      =   2.71, A3      =-164.13, A4      =   0.70
+ZEROS: A5      =  -1.45, A6      =   0.24, RM      =   0.00, GM      =   0.00
+ZEROS: TM      =   0.00, RAV     =   0.00, RAH     =   0.00, GU      =   0.00
+ZEROS: GL      =   0.00, TU      =   0.00, TL      =   0.00, A3P     =   0.00
+ZEROS: D1T     =   0.00, D1B     =   0.00, D1R     =   0.00, D1L     =   0.00
+ZEROS: D2T     =   0.00, D2B     =   0.00, D2R     =   0.00, D2L     =   0.00
+PARAM: TI=      1.00
+PARAM: TT=      1.60, RT=      1.75
+PARAM: REACTOR= 0.00
+FORMT:
+DATA_:
+  PNT        A3        M1        M2      TIME      CNTS         A3         A4         TT 
+   1      65.7500    21320        0     1.00         8       65.750    -50.690      1.602 
+   2      65.9500    20863        0     1.00         8       65.950    -50.690      1.602 
+   3      66.1400    21157        0     1.00        19       66.140    -50.690      1.602 
+   4      66.3400    20752        0     1.00        64       66.340    -50.690      1.602 
+   5      66.5500    21356        0     1.00       330       66.550    -50.690      1.602 
+   6      66.7400    21061        0     1.00      1231       66.740    -50.690      1.602 
+   7      66.9500    21285        0     1.00       968       66.950    -50.690      1.602 
+   8      67.1500    21169        0     1.00      1263       67.150    -50.690      1.602 
+   9      67.3400    21352        0     1.00       442       67.340    -50.690      1.602 
+  10      67.5500    21279        0     1.00       390       67.550    -50.690      1.602 
+  11      67.7400    21183        0     1.00       156       67.740    -50.690      1.602 
+  12      67.9400    21046        0     1.00        42       67.940    -50.690      1.602 
+  13      68.1500    21325        0     1.00        20       68.150    -50.690      1.602 
+  14      68.3400    21209        0     1.00        15       68.340    -50.690      1.602 
+  15      68.5400    20811        0     1.00        11       68.540    -50.690      1.602 
