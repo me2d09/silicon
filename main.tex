@@ -138,7 +138,7 @@
 
 \begin{abstract}
 
-Efforts are rising in opening up science, by making data more transparent and more available including the data reduction and evaluation procedures and code. 
+Efforts are rising in opening up science by making data more transparent and more available, including the data reduction and evaluation procedures and code. 
 A strong foundation for this is the FAIR principle, building on Findability, Accessibility, Interoperability, and Reuse of digital assets. 
 Here, we have used data, which has been made available by the Institute Laue-Langevin and can be identified using a DOI, to follow the FAIR principle in extracting, evaluating and publishing triple axis data, recorded at IN3.
 
@@ -154,28 +154,28 @@ Here, we have used data, which has been made available by the Institute Laue-Lan
 
 Open Science is defined as \emph{``the practice of science in such a way that others can collaborate and contribute, where research data, lab notes and other research processes are freely available, under terms that enable reuse, redistribution and reproduction of the research and its underlying data and methods''} \cite{foster}.\\
 
-There is a rising demand around the world for an open science and many organisations are putting efforts into increasing the amount of infrastructures available for open data \cite{plos, sharing, panosc, nfdi, expands}. 
-It is especially the operators and users of large-scale facilities that are pushing forward in this endeavour in the natural sciences \cite{panosc, nfdi, expands}.
-This is understandable, considering that large-scale facilities do produce limited, and therefore very valuable data sets, which can not be easily reproduced due to the limited measurement time. As a result, these data sets should be made available (after an embargo time) to the entire scientific community. 
+There is a rising demand around the world for open science and many organisations are putting efforts into increasing the amount of infrastructures available for open data \cite{plos, sharing, panosc, nfdi, expands}. 
+It is especially the operators and users of large-scale facilities that are pushing forward this endeavour in the natural sciences \cite{panosc, nfdi, expands}.
+This is understandable, considering that large-scale facilities do produce limited, and therefore very valuable data sets, which cannot be easily reproduced due to limited measurement time. As a result, these data sets should be made available (after an embargo time) to the entire scientific community. 
 
 Most large-scale facilities offer measurement time in a proposal based system, where the best proposals are granted measurement time.
 It is therefore highly unlikely that the same experiment will be performed for a second time. 
 Unfortunately, it happens rather often that during a PhD project, data is measured at large-scale facilities, that will not be evaluated or published anymore by the respective PhD student, or another member of the research group.
-In such cases, data that has been taken at large-scale facility is stored away somewhere, unpublished.
-If such data would be made available (after an embargo time) it could be evaluated and published by other scientists therefore contributing to the entire scientific community
+In such cases, data that has been taken at large-scale facilities is stored away somewhere, unpublished.
+If such data would be made available (after an embargo time) it could be evaluated and published by other scientists and therefore contributing to the entire scientific community.
 
 Even though, open science is on the rise many researchers have not been trained in how to follow the FAIR principles, and how to make their science and data openly available.
 We believe it is paramount to confront scientists at an early career stage with the concepts of open science, and therefore, it was an utmost concern for us to include an entire session on open science in the first ``Czech-Bavarian mini-school on large scale facilities \emph{and open data}'' \cite{mini-school}.
-During this session, the participants received an introduction to Open Science \cite{foster}, the FAIR principle \cite{FAIR}, Open Publishing \cite{arXiv} and the figshare platform \cite{figshare}, followed by a hands on session.
-During the hands on session, openly available data was extracted, evaluated and analysed within approximately one hour, resulting in the data and graphs, shown below.
+During this session, the participants received an introduction to open science \cite{foster}, the FAIR principle \cite{FAIR}, open publishing \cite{arXiv} and the figshare platform \cite{figshare}, followed by a hands on session.
+During the hands on session, openly available data was extracted, evaluated and analysed within approximately one hour, resulting in the data, graphs, and code \cite{data-evaluation, data-docker} shown below.
 We applied the Open Science principles to triple axis data recorded at IN3 \cite{data} made available by the Institute Laue-Langevin (ILL) in Grenoble.
 
 \section{Experimental details}
 
 The data were recorded using the IN3 triple - axis spectrometer \cite{IN3} at the ILL in 2014.
 We are not aware of the details of the experiments, since there was no experimental report or submitted proposal stored together with the data.
-The sample measured was a silicon crystal. 
-This is apparent from the sample name chosen online, and could be confirmed by calculating the lattice constant of the sample which is [111], which corresponds to the [1-10] of Silicon.
+The sample measured was a silicon crystal, which is apparent from the sample name chosen online, and could be confirmed by cthe lattice constant of the sample which is 5.431\,\AA \cite{Hom1975}.
+
 
 IN3 has two different monochromators: a PG002 and a Cu monochromator.
 Considering the d-value of \SI{3.355}{\AA} used in the experiment, which can be extracted from the meta-data, it is clear that the PG002 monochromator was used.
@@ -193,7 +193,7 @@ Please note that all numbers used here were extracted from the meta-data ONLY, a
 
 The raw data are analysed utilising Python Jupyter notebooks \cite{jupyter} using the ufit package \cite{ufit}.
 The notebook \cite{data-evaluation} runs within a Docker image \cite{Docker}, that contains all the required Python packages.
-This approach will allow to run the data analysis directly from tools like Binder \cite{binder}.
+This approach will allow to run the data analysis \cite{data-docker} directly from tools like Binder \cite{binder}.
 Furthermore, it ensures that the data analysis can still be run after a specific package has been upgraded.
 
 ILL, where the data was acquired, is actually not completely following the F.A.I.R. principles, specifically Accessibility. 
@@ -217,7 +217,7 @@ The two peaks do not have the same shape because of the tilted resolution ellips
 However, a detailed analysis of the instrument resolution is beyond the scope of this paper.
 
 The extracted peak position is $0.071 \pm  0.002$ rlu. 
-This value is plotted as a red dot in Fig. \ref{fig2} together with the dispersion relation published in \onlinecite{Aouissi}.
+This value is plotted as a red dot in Fig. \ref{fig2} together with the dispersion relation published in \cite{Aouissi}.
 
 A description on how the data evaluation is run is included in the \emph{readme} file \cite{data-evaluation}.
 
