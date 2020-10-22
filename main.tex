@@ -20,10 +20,13 @@
 %
 \documentclass[aps,prx,reprint,amsmath,amssymb,superscriptaddress,showpacs]{revtex4-1}
 
+\usepackage[english]{babel}
 \usepackage{graphicx}% Include figure files
 \usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
 \usepackage{url}
+\usepackage{siunitx}
+
 %\usepackage{hyperref}% add hypertext capabilities
 %\usepackage[mathlines]{lineno}% Enable numbering of text and display math
 %\linenumbers\relax % Commence numbering lines
@@ -45,12 +48,12 @@
 
 \author{Lukas Beddrich}
 \address{Heinz Maier-Leibnitz Zentrum (MLZ), Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
-\address{Lehrstuhl für Neutronenstreuung (E21), Physik Department, Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
+\address{Technische Universit\"at M\"unchen, Physik-Department, Lehrstuhl für Neutronenstreuung (E21), D-85748 Garching, Germany}
 \email{lukas.beddrich@frm2.tum.de}
 
 \author{Alexander Book}
-\address{Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
-%\email{alexander.book@frm2.tum.de}
+\address{Technische Universit\"at M\"unchen, Physik-Department, Lehrstuhl für Neutronenstreuung (E21), D-85748 Garching, Germany}
+\email{alexander.book@frm2.tum.de}
 
 \author{Xaver Simon Brems}
 \address{Heinz Maier-Leibnitz Zentrum (MLZ), Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
@@ -69,7 +72,7 @@
 %\email{luis.flacke@wmi.badw.de}
 
 \author{Henrik Gabold}
-\address{Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
+\address{Technische Universit\"at M\"unchen, Physik-Department, Lehrstuhl für Neutronenstreuung (E21), D-85748 Garching, Germany}
 %\email{henrik.gabold@frm2.tum.de}
 
 \author{Marianna Gerina}
@@ -136,7 +139,7 @@
 
 Efforts are rising in opening up science, by making data more transparent and more available including the data reduction and evalution procedures and code. 
 A strong foundation for this is the FAIR principle, building on Findability, Accessibility, Interoperability, and Reuse of digital assets. 
-Here, we have used data, which as been made available by the Institute Laue-Langevin and can be identified using a DOI, to follow the FAIR principle in extracting, evaluating and publishing triple axis data, recorded at IN3.
+Here, we have used data, which has been made available by the Institute Laue-Langevin and can be identified using a DOI, to follow the FAIR principle in extracting, evaluating and publishing triple axis data, recorded at IN3.
 
 \end{abstract}
 
@@ -165,12 +168,12 @@ The sampled measured was a Silicon crystal.
 This is apparent from the sample name chosen online, and could be confirmed by calculating the lattice constant of the sample which is \textbf{XXX}, which corresponds to the \textbf{XYZ crystal direction} of Silcon.
 
 IN3 has two different monochromators: a PG002 and a Cu monochromator.
-Considering the d-value of 3.355 \AA used in the experiment, which can be extracted from the meta-data, it is clear that the PG002 monochromator was used.
+Considering the d-value of \SI{3.355}{\AA} used in the experiment, which can be extracted from the meta-data, it is clear that the PG002 monochromator was used.
 In the same manner it was determined that the PG002 analyzer was used. 
-Furthermore, the outgoing k-vector (k$_f$) was fixed to 2.66325 \AA$^{-1}$, which suggests the use of a PG filter. 
-The outgoing k-vector corresponds to a wavelenght of $\lambda$\,=\,2.359\,\AA.
+Furthermore, the outgoing $k$-vector ($k_f$) was fixed to \SI{2.66325}{\AA^{-1}}, which suggests the use of a PG filter. 
+The outgoing $k$-vector corresponds to a wavelength of $\lambda=\SI{2.359}{\AA}$.
 
-The sample was cooled down to T = 1.6\,K, where all measurements were recorded. 
+The sample was cooled down to $T = \SI{1.6}{K}$, where all measurements were recorded. 
 This was probably done in the ``orange'' cryostat.
 
 
@@ -184,13 +187,17 @@ Please note that all numbers used here were extracted from the meta-data ONLY, a
 Petr will have to add stuff here. what code he used etc...
 
 \begin{figure}
-    \includegraphics[width=1.0\linewidth]{energy-scan.pdf}
-    \caption{\label{fig1} A figure caption.}
+	\centering
+    \includegraphics[width=1.0\linewidth]{energy-scan}
+    \caption{A figure caption.}
+    \label{fig1} 
 \end{figure}
 
 \begin{figure}
-    \includegraphics[width=1.0\linewidth]{dispersion.pdf}
-    \caption{\label{fig2} A second figure caption.}
+	\centering
+    \includegraphics[width=1.0\linewidth]{dispersion}
+    \caption{A second figure caption.}
+    \label{fig2} 
 \end{figure}
 
 
