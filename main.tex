@@ -173,9 +173,9 @@ Here, we applied the Open Science principles to triple axis data recorded at IN3
 \section{Experimental details}
 
 The data were recorded using the IN3 triple - axis spectrometer \cite{IN3} at the ILL in 2014.
-We are not aware of the details of the experiments, since the experimental report, or the submitted proposal were not stored together with the data.
-The sampled measured was a silicon single crystal. 
-This is apparent from the sample name chosen online, and could be confirmed by the meta data, which states the lattice constant of the sample as \SI{5.431}{\AA}, exactly matchig values in the literature \cite{siliconparams}.
+We are not aware of the details of the experiments, since there was no experimental report or submitted proposal stored together with the data.
+The sample measured was a silicon crystal. 
+This is apparent from the sample name chosen online, and could be confirmed by calculating the lattice constant of the sample which is \textbf{XXX}, which corresponds to the \textbf{XYZ crystal direction} of Silicon.
 
 IN3 has two different monochromators: a PG002 and a Cu monochromator.
 Considering the d-value of \SI{3.355}{\AA} used in the experiment, which can be extracted from the meta-data, it is clear that the PG002 monochromator was used.
@@ -186,26 +186,44 @@ The corresponding wavelength is $\lambda_f=\SI{2.359}{\AA}$.
 The sample was cooled down to $T = \SI{1.6}{K}$, where all measurements were recorded. 
 This was probably done in the ``orange'' cryostat.
 
-
-
-
 Please note that all numbers used here were extracted from the meta-data ONLY, and we have no way of confirming these data at the moment. 
 
 
 \section{Data analysis and results}
 
-All the raw data were analyzed using Python Jupyter notebook \cite{jupyter} using ufit \cite{ufit} package.
-The notebook \cite{data-evaluation} is designed to work in fully automatic mode so first it will obtain the data from the source \cite{data}. We have also build Docker \cite{Docker} package \cite{docker-package} including all required Python packages. This approach will allow to run the data analysis directly from the tools like Binder \cite{binder}. The description of the process how to run the data evaluation is included in the readme file \cite{data-evaluation}.
+The raw data are analyzed utilizing Python Jupyter notebooks \cite{jupyter} using the ufit package \cite{ufit}.
+The notebook \cite{data-evaluation} runs within a Docker image \cite{Docker}, that contains all the required Python packages.
+This approach will allow to run the data analysis directly from tools like Binder \cite{binder}.
+Furthermore, it ensures that the data analysis can still be run after a specific package has been upgraded.
 
-ILL is actually not following fully F.A.I.R. principles, specifically Accessibility. In order to access the data one needs to provide ILL credentials. Our script is able to download the data from ILL webpage, if the correct ILL credentials are supplied. Then whole rawdata folder is downloaded form ILL server to the /rawdata folder (rewriting actuall content). In case the ill will change the website, automatic data download will not work anymore. Therefore the all rawdata directory is also published together with evaluation scripts \cite{data-evaluation}.
+ILL, where the data was acquired, is actually not completely following the F.A.I.R. principles, specifically Accessibility. 
+In order to access the data one needs to provide ILL credentials. 
+Our script is able to download the data from the ILL webpage, if the correct ILL credentials are supplied. 
+From there the entire rawdata folder is downloaded to the /rawdata folder (rewriting actuall content). 
+In case the ILL will change their access policy the automatic data download will not work anymore. 
+Therefore the rawdata directory is published together with the data evaluation scripts \cite{data-evaluation}.
 
-The rawdata directory contains 46 datafiles form number 84860 till 84905. First 44 files are clearly sample alignment, starting with sample rotation scans continuing with adjustment of the goniemoter and lattice parameters. This procedure was redone several times, probably because it was part of students practice.
-At the end, only two scans were measured, first was datafile 84904 containing only 3 points outside any excitation and then there is the final datafile 84905 containing two excitation. We will analyze only this datafile.
+The rawdata directory contains 46 datafiles from number 84860 till 84905. 
+The first 44 files are sample alignment, including sample rotation scans, the adjustment of the goniometer and lattice parameters. 
+This procedure was repeated several times, possibily as part of a students practice.
+Only two ``real'' measurements were performed after the sample alignements.
+The first of these datafiles (84904) containings only 3 data points far off any excitation.
+The second measurement (84905) contains two excitations, which are analyzed below.
 
-Analysis will be done later :)
+The measured raw data are plotted in the Fig. \ref{fig1}.
+Both peaks are fitted with a simple model of two Gaussians and a constant background. 
+The position of the second peak is fixed to be at the negative position of the first peak. 
+The two peaks do not have the same shape because of the tilted resolution ellipsoid of every triple axis spectrometer and can therefore not be fitted properly with just a Gaussian. 
+However, a detailed analysis of the instrument resolution is beyond the scope of this paper.
+
+The extracted peak position is $0.071 \pm  0.002$ rlu. 
+This value is plotted as a red dot in Fig. \ref{fig2} together with the dispersion relation published in \onlinecite{Aouissi}.
+
+A description on how the data evaluation is run is included in the readme file \cite{data-evaluation}.
+
 
 \begin{figure}
-    \includegraphics[width=1.0\linewidth]{energy-scan.pdf}
+    \includegraphics[width=1.0\linewidth]{mini-school-si-cescan.png}
     \caption{\label{fig1} Constant energy scan at $\Delta E = 6.0\,\mathrm{meV}$ in [111] direction around ($\bar{2}20$). It shows the creation and annihilation peak of the phonon dispersion with the typical focusing and defocusing effect associated with the sloped resolution of a triple-axis spectrometer.}
 \end{figure}
 
@@ -217,12 +235,15 @@ Analysis will be done later :)
 
 
 
-\section{Conclusions}
+\section{Discussion and Conclusions}
 
 Summarize results...
 
 This data analysis would have been much easier, if together with the data, some more information regarding the experiment would have been published, e.g. an experimental report or a lab book.
 
+
+
+\bibliography{bibliography}
 
 %\begin{thebibliography}{9}
 
@@ -240,9 +261,7 @@ This data analysis would have been much easier, if together with the data, some 
 %\bibitem{data} 
 %STEFFENS Paul; DELLEA Greta; DENG Yue; DIETL Christopher; DJURADO David; GAMBINO Marianna; HEPTING Matthias; INKINEN JUHO; JAFARI Atefeh; LEFRANCOIS Emilie; LOPES SELVATI Ana Carolina; PANAHI Hamed; PEDERSEN Martin Nors; PRADIP Ramu; RANIERI Umbertoluca; ROSSI Matteo; SCHATTE Sarah; STANA Markus; TIMOSENKO Janis; VONESHEN David and ZBIRI Mohamed. (2014). HSC17 Hercules practical course. Institut Laue-Langevin (ILL) doi:10.5291/ILL-DATA.TEST-2385 \url{doi:10.5291/ILL-DATA.TEST-2385}
 %\bibitem{Aouissi} Aouissi, M. and Hamdi, I. and Meskini, N. and Qteish, A; Phonon spectra of diamond, Si, Ge, and $\alpha$-Sn: Calculations with real-space interatomic force constants; Phys. Rev. B, 74(5), 054302 (2006)
-%\bibitem{siliconparams} Hom, T and Kiszenik, W and Post, B; Accurate lattice constants from multiple reflection measurements. II. Lattice constants of germanium silicon, and diamond; Journal of Applied Crystallography, 8(4), 457-458 (1975)
 %\end{thebibliography}
-
 
 
 \end{document}
