@@ -194,7 +194,15 @@ Please note that all numbers used here were extracted from the meta-data ONLY, a
 
 \section{Data analysis and results}
 
-Petr will have to add stuff here. what code he used etc...
+All the raw data were analyzed using Python Jupyter notebook \cite{jupyter} using ufit \cite{ufit} package.
+The notebook \cite{data-evaluation} is designed to work in fully automatic mode so first it will obtain the data from the source \cite{data}. We have also build Docker \cite{Docker} package \cite{docker-package} including all required Python packages. This approach will allow to run the data analysis directly from the tools like Binder \cite{binder}. The description of the process how to run the data evaluation is included in the readme file \cite{data-evaluation}.
+
+ILL is actually not following fully F.A.I.R. principles, specifically Accessibility. In order to access the data one needs to provide ILL credentials. Our script is able to download the data from ILL webpage, if the correct ILL credentials are supplied. Then whole rawdata folder is downloaded form ILL server to the /rawdata folder (rewriting actuall content). In case the ill will change the website, automatic data download will not work anymore. Therefore the all rawdata directory is also published together with evaluation scripts \cite{data-evaluation}.
+
+The rawdata directory contains 46 datafiles form number 84860 till 84905. First 44 files are clearly sample alignment, starting with sample rotation scans continuing with adjustment of the goniemoter and lattice parameters. This procedure was redone several times, probably because it was part of students practice.
+At the end, only two scans were measured, first was datafile 84904 containing only 3 points outside any excitation and then there is the final datafile 84905 containing two excitation. We will analyze only this datafile.
+
+Analysis will be done later :)
 
 \begin{figure}
     \includegraphics[width=1.0\linewidth]{mini-school-si-cescan.png}
