@@ -62,16 +62,17 @@
 \title{Manuscript Title:\\with Forced Linebreak}% Force line breaks with \\
 \thanks{A footnote to the article title}%
 
-\author{Ann Author}
- \altaffiliation[Also at ]{Physics Department, XYZ University.}%Lines break automatically or can be forced with \\
+\author{Petr Cermak}
+\email{cermak@mag.mff.cuni.cz}
+ \affiliation{Charles University}
+ 
 \author{Second Author}%
  \email{Second.Author@institution.edu}
 \affiliation{%
- Authors' institution and/or address\\
- This line break forced with \textbackslash\textbackslash
+ Authors' institution and/or address
 }%
 
-\collaboration{MUSO Collaboration}%\noaffiliation
+\collaboration{Czech-Bavarian Mini-School}%\noaffiliation
 
 \author{Charlie Author}
  \homepage{http://www.Second.institution.edu/~Charlie.Author}
@@ -94,15 +95,7 @@
              %  but any date may be explicitly specified
 
 \begin{abstract}
-An article usually includes an abstract, a concise summary of the work
-covered at length in the main body of the article. 
-\begin{description}
-\item[Usage]
-Secondary publications and information retrieval purposes.
-\item[Structure]
-You may use the \texttt{description} environment to structure your abstract;
-use the optional argument of the \verb+\item+ command to give the category of each item. 
-\end{description}
+There will be abstract
 \end{abstract}
 
 %\keywords{Suggested keywords}%Use showkeys class option if keyword
@@ -111,44 +104,19 @@ use the optional argument of the \verb+\item+ command to give the category of ea
 
 %\tableofcontents
 
-\section{\label{sec:level1}First-level heading:\protect\\ The line
-break was forced \lowercase{via} \textbackslash\textbackslash}
+\section{Introduction}
 
-This sample document demonstrates proper use of REV\TeX~4.2 (and
-\LaTeXe) in mansucripts prepared for submission to APS
-journals. Further information can be found in the REV\TeX~4.2
-documentation included in the distribution or available at
-\url{http://journals.aps.org/revtex/}.
+\section{Experimental details}
 
-When commands are referred to in this example file, they are always
-shown with their required arguments, using normal \TeX{} format. In
-this format, \verb+#1+, \verb+#2+, etc. stand for required
-author-supplied arguments to commands. For example, in
-\verb+\section{#1}+ the \verb+#1+ stands for the title text of the
-author's section heading, and in \verb+\title{#1}+ the \verb+#1+
-stands for the title text of the paper.
+Of course we don't know, because there were not proper data description.
+It was definitelly measured on IN3 and the sample was Silicon (this we know because of lettice constant XXX in the data file).
 
-Line breaks in section headings at all levels can be introduced using
-\textbackslash\textbackslash. A blank input line tells \TeX\ that the
-paragraph has ended. Note that top-level section headings are
-automatically uppercased. If a specific letter or word should appear in
-lowercase instead, you must escape it using \verb+\lowercase{#1}+ as
-in the word ``via'' above.
-
-\subsection{\label{sec:level2}Second-level heading: Formatting}
-
-This file may be formatted in either the \texttt{preprint} or
-\texttt{reprint} style. \texttt{reprint} format mimics final journal output. 
-Either format may be used for submission purposes. \texttt{letter} sized paper should
-be used when submitting to APS journals.
+It was use PG200 as analyzer
 
 \begin{thebibliography}{9}
 
 \bibitem{einstein} 
-Albert Einstein. 
-\textit{Zur Elektrodynamik bewegter K{\"o}rper}. (German) 
-[\textit{On the electrodynamics of moving bodies}]. 
-Annalen der Physik, 322(10):891–921, 1905.
+STEFFENS Paul; DELLEA Greta; DENG Yue; DIETL Christopher; DJURADO David; GAMBINO Marianna; HEPTING Matthias; INKINEN JUHO; JAFARI Atefeh; LEFRANCOIS Emilie; LOPES SELVATI Ana Carolina; PANAHI Hamed; PEDERSEN Martin Nors; PRADIP Ramu; RANIERI Umbertoluca; ROSSI Matteo; SCHATTE Sarah; STANA Markus; TIMOSENKO Janis; VONESHEN David and ZBIRI Mohamed. (2014). HSC17 Hercules practical course. Institut Laue-Langevin (ILL) doi:10.5291/ILL-DATA.TEST-2385
 
 \end{thebibliography}
 
