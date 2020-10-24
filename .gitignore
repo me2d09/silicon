@@ -24,3 +24,5 @@
 *.fdb_latexmk
 *.fls
 main.pdf
+*-eps-converted-to.pdf
+*Notes.bib
