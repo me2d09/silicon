@@ -24,7 +24,7 @@ We also acknowledge BTHA agency for providing us financial support for the Czech
 
 ## Technical details and file description
 
-There is a Jupyter notebook [silicon.ipynb](https://github.com/me2d09/silicon/blob/main/silicon.ipynb) containing all the data evaluation. If you run it, it will generate all figures used in [latex manuscript](https://github.com/me2d09/silicon/blob/main/main.tex). IPython notebook also tries to download original data from [data.ill.fr][1] server. However this can fail and there copy of the data is placed in rawdata folder. Detailed description of the analysis is int he notebook and/or in the paper itself.
+There is a Jupyter notebook [silicon.ipynb](https://github.com/me2d09/silicon/blob/main/silicon.ipynb) containing all the data evaluation. If you run it, it will generate all figures used in [latex manuscript](https://github.com/me2d09/silicon/blob/main/main.tex). IPython notebook also tries to download original data from [data.ill.fr][1] server. However this can fail and therefore copy of the data is placed in `rawdata/` folder. Detailed description of the analysis is in the notebook and/or in the paper itself.
 
 ## File description
 
