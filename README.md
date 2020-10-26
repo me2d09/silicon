@@ -11,6 +11,8 @@ Alternativelly you can use Binder with [full Docker image](https://doi.org/10.60
 
 We are using fully non-restrictive and opened [![CC-0 license](https://img.shields.io/badge/License-CC--0-blue.svg)](https://creativecommons.org/licenses/by-nd/4.0). Although CC0 does not legally require users of the data to cite the source, it does not affect the ethical norms for attribution in scientific and research communities. The ideal way of using our code and latex manuscript is to fork it on github.
 
+The datafiles in the `rawdata` folder are only a copy of [the original data][1], which are published under [![License: CC BY](https://img.shields.io/badge/License-CC%20BY-blue.svg)](https://creativecommons.org/licenses/by/4.0/). This means, if the data is used it is necessary to give appropriate credit, provide a link to the license, and indicate if changes were made.
+
 ## Authors and acknowledgement
 
 This repository including paper and data evaluation script are authored by all students attending the [Czech-Bavarian Mini-school 2020](https://mini-school.eu/):  
@@ -35,7 +37,7 @@ Latex file is automatically build, see [main.yml](https://github.com/me2d09/sili
 File | description
 --- | ---
 .github/workflows | folder conatining Github actions workflow for automatic compilation of the latex PDF paper.
-rawdata/ | copy of the all datafiles from the [original experiment][1]
+ [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/) rawdata/ | copy of the all datafiles from the [original experiment][1] 
 .gitignore | gitignore file for ignoring latex artifacts
 LICENSE | CC0 1.0 Universal licence, most free license!
 README.md | this document
@@ -47,4 +49,4 @@ phonon.png | part of Figure 3 from [Aouissi paper](https://doi.org/10.1103/PhysR
 requirements.txt | python requirements, which binder will use
 silicon.ipynb | entire automatic data evaluation is here
 
-[1]: (https://doi.ill.fr/10.5291/ILL-DATA.TEST-2385)
+[1]: https://doi.ill.fr/10.5291/ILL-DATA.TEST-2385
