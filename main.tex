@@ -1,3 +1,4 @@
+\pdfoutput=1
 % ****** Start of file apssamp.tex ******
 %
 %   This file is part of the APS files in the REVTeX 4.2 distribution.
@@ -18,7 +19,7 @@
 %  3)  latex apssamp.tex
 %  4)  latex apssamp.tex
 %
-\documentclass[aps,prx,reprint,amsmath,amssymb,superscriptaddress,showpacs]{revtex4-1}
+\documentclass[aps,reprint,amsmath,amssymb,superscriptaddress]{revtex4-1}
 
 \usepackage[english]{babel}
 \usepackage{graphicx}% Include figure files
@@ -243,8 +244,10 @@ It needs to be stated that, this data analysis would have been much easier, if t
 We would therefore encourage users to add some further description to their openly available data. 
 
 
-
-
+\begin{acknowledgments}
+We acknowledge all the students who measured neutron data \cite{data} during the Hercules practical course and especially their local contact Paul Steffens. 
+We also acknowledge the BTHA agency for providing us with financial support for the Czech Bavarian Mini-school on large-scale facilities and open data under the grant BTHA-AP-2020-25. We acknowledge the Institute Laue-Langevin for opening the data.
+\end{acknowledgments}
 
 
 \bibliography{bibliography}
