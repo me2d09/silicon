@@ -1,137 +1,106 @@
-\pdfoutput=1
-% ****** Start of file apssamp.tex ******
-%
-%   This file is part of the APS files in the REVTeX 4.2 distribution.
-%   Version 4.2a of REVTeX, December 2014
-%
-%   Copyright (c) 2014 The American Physical Society.
-%
-%   See the REVTeX 4 README file for restrictions and more information.
-%
-% TeX'ing this file requires that you have AMS-LaTeX 2.0 installed
-% as well as the rest of the prerequisites for REVTeX 4.2
-%
-% See the REVTeX 4 README file
-% It also requires running BibTeX. The commands are as follows:
-%
-%  1)  latex apssamp.tex
-%  2)  bibtex apssamp
-%  3)  latex apssamp.tex
-%  4)  latex apssamp.tex
-%
-\documentclass[aps,reprint,amsmath,amssymb,superscriptaddress]{revtex4-1}
+\documentclass[aps,pra,reprint,amsmath,amssymb,superscriptaddress,showkeys]{revtex4-1}
 
 \usepackage[english]{babel}
 \usepackage{graphicx}% Include figure files
-\usepackage{dcolumn}% Align table columns on decimal point
 \usepackage{bm}% bold math
 \usepackage{url}
 \usepackage{siunitx}
+\usepackage{hyperref}
+\usepackage[hyphenbreaks]{breakurl}
 
-%\usepackage{hyperref}% add hypertext capabilities
-%\usepackage[mathlines]{lineno}% Enable numbering of text and display math
-%\linenumbers\relax % Commence numbering line
-
-%\usepackage[showframe,%Uncomment any one of the following lines to test 
-%%scale=0.7, marginratio={1:1, 2:3}, ignoreall,% default settings
-%%text={7in,10in},centering,
-%%margin=1.5in,
-%%total={6.5in,8.75in}, top=1.2in, left=0.9in, includefoot,
-%%height=10in,a5paper,hmargin={3cm,0.8in},
-%]{geometry}
 
 \begin{document}
 
 \preprint{APS/123-QED}
 
-\title{An Exercise in Open Data: Triple Axis Data on Si single crystal}% Force line breaks with \\
+\title{An Exercise in Open Data: Triple Axis Data on Si single crystal}
 \thanks{Authors in alphabetical order}%
 
 \author{Lukas Beddrich}
-\address{Heinz Maier-Leibnitz Zentrum (MLZ), Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
-\address{Technische Universit\"at M\"unchen, Physik-Department, Lehrstuhl f\"ur Neutronenstreuung (E21), D-85748 Garching, Germany}
+\affiliation{Heinz Maier-Leibnitz Zentrum (MLZ), Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
+\affiliation{Technische Universit\"at M\"unchen, Physik-Department, Lehrstuhl f\"ur Neutronenstreuung (E21), D-85748 Garching, Germany}
 %\email{lukas.beddrich@frm2.tum.de}
 
 \author{Alexander Book}
-\address{Technische Universit\"at M\"unchen, Physik-Department, Lehrstuhl f\"ur Neutronenstreuung (E21), D-85748 Garching, Germany}
+\affiliation{Technische Universit\"at M\"unchen, Physik-Department, Lehrstuhl f\"ur Neutronenstreuung (E21), D-85748 Garching, Germany}
 %\email{alexander.book@frm2.tum.de}
 
 \author{Xaver Simon Brems}
-\address{Heinz Maier-Leibnitz Zentrum (MLZ), Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
+\affiliation{Heinz Maier-Leibnitz Zentrum (MLZ), Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
 %\email{xaver.brems@tum.de}
 
 \author{Petr \v{C}erm\'{a}k}
-\address{Charles University, Faculty of Mathematics and Physics, Department of Condensed Matter Physics}
+\affiliation{Charles University, Faculty of Mathematics and Physics, Department of Condensed Matter Physics, Czech republic}
 %\email{cermak@mag.mff.cuni.cz}
 
 \author{Micha{\l} Dembski-Villalta}
-\address{Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
+\affiliation{Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
 %\email{michal.dembski-villalta@tum.de}
 
 \author{Luis Flacke}
-\address{Walther Meißner Institut, Bayerische Akademie der Wissenschaften, D-85748 Garching, Germany}
-\address{Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
+\affiliation{Walther Meißner Institut, Bayerische Akademie der Wissenschaften, D-85748 Garching, Germany}
+\affiliation{Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
 %\email{luis.flacke@wmi.badw.de}
 
 \author{Henrik Gabold}
-\address{Technische Universit\"at M\"unchen, Physik-Department, Lehrstuhl f\"ur Neutronenstreuung (E21), D-85748 Garching, Germany}
+\affiliation{Technische Universit\"at M\"unchen, Physik-Department, Lehrstuhl f\"ur Neutronenstreuung (E21), D-85748 Garching, Germany}
 %\email{henrik.gabold@frm2.tum.de}
 
 \author{Marianna Gerina}
-\address{Charles University, Faculty of Mathematics and Physics, Department of Condensed Matter Physics}
+\affiliation{Charles University, Faculty of Mathematics and Physics, Department of Condensed Matter Physics, Czech republic}
 %\email{marygerina@hotmail.it}
 
 \author{Johanna K. Jochum}
-\address{Heinz Maier-Leibnitz Zentrum (MLZ), Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
+\affiliation{Heinz Maier-Leibnitz Zentrum (MLZ), Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
 %\email{jjochum@frm2.tum.de}
 
 \author{Andrej Kancko}
-\address{Charles University, Faculty of Mathematics and Physics, Department of Condensed Matter Physics}
+\affiliation{Charles University, Faculty of Mathematics and Physics, Department of Condensed Matter Physics, Czech republic}
 %\email{ado3120@gmail.com}
 
 \author{Soňa Koh\'{u}tekov\'{a}}
-\address{Charles University, Faculty of Science, Department of Inorganic Chemistry, Hlavova 8, 128 40 Prague 2, Czech Republic}
+\affiliation{Charles University, Faculty of Science, Department of Inorganic Chemistry, Hlavova 8, 128 40 Prague 2, Czech Republic}
 %\email{kohuteks@natur.cuni.cz}
 
 \author{Tereza Ko\v{s}utov\'{a}}
-\address{Charles University, Faculty of Mathematics and Physics, Department of Condensed Matter Physics}
+\affiliation{Charles University, Faculty of Mathematics and Physics, Department of Condensed Matter Physics, Czech republic}
 %\email{kretkova@karlov.mff.cuni.cz}
 
 \author{Petr Kr\'{a}l}
-\address{Charles University, Faculty of Mathematics and Physics, Department of Condensed Matter Physics}
+\affiliation{Charles University, Faculty of Mathematics and Physics, Department of Condensed Matter Physics, Czech republic}
 %\email{petrkral@karlov.mff.cuni.cz}
 
 \author{Anastasiia Murmiliuk}
-\address{Charles University, Faculty of Science, Department of Physical and Macromolecular Chemistry}
+\affiliation{Charles University, Faculty of Science, Department of Physical and Macromolecular Chemistry, Czech republic}
 %\email{murmilia@natur.cuni.cz}
 
 \author{Luk\'{a}\v{s} Nowak}
-\address{Charles University, Faculty of Mathematics and Physics, Department of Condensed Matter Physics}
+\affiliation{Charles University, Faculty of Mathematics and Physics, Department of Condensed Matter Physics, Czech republic}
 %\email{lukas.nowak22@gmail.com}
 
 \author{Anastasiia Pylypets}
-\address{Charles University, Faculty of Mathematics and Physics, Department of Condensed Matter Physics}
+\affiliation{Charles University, Faculty of Mathematics and Physics, Department of Condensed Matter Physics, Czech republic}
 %\email{pylypets@fzu.cz}
 
 \author{Daniel Sta\v{s}ko}
-\address{Charles University, Faculty of Mathematics and Physics, Department of Condensed Matter Physics}
+\affiliation{Charles University, Faculty of Mathematics and Physics, Department of Condensed Matter Physics, Czech republic}
 %\email{staskodaniel@gmail.com}
 
 \author{Ran Tang}
-\address{Heinz Maier-Leibnitz Zentrum (MLZ), Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
+\affiliation{Heinz Maier-Leibnitz Zentrum (MLZ), Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
 %\email{ran.tang@frm2.tum.de}
 
 \author{Michal Van\v{c}\'{i}k}
-\address{Charles University, Faculty of Mathematics and Physics, Department of Condensed Matter Physics}
+\affiliation{Charles University, Faculty of Mathematics and Physics, Department of Condensed Matter Physics, Czech republic}
 %\email{michal.kicnav@gmail.com}
 
 \author{Lukas Vogl}
-\address{Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
+\affiliation{Technische Universit\"at M\"unchen, D-85748 Garching, Germany}
 %\email{lukas.vogl@tum.de}
 
 
 \collaboration{Czech-Bavarian Mini-School on large scale facilities and open data}%\noaffiliation
-
+\noaffiliation
 
 
 \date{\today}% It is always \today, today,
@@ -146,7 +115,6 @@ Here, we have used data, which has been made available by the Institute Laue-Lan
 \end{abstract}
 
 \keywords{Open Data, Triple Axis Spectroscopy, Silicon, Neutron Scattering}%Use showkeys class option if keyword
-                              %display desired
 \maketitle
 
 
@@ -179,10 +147,10 @@ The sample measured was a silicon crystal, which is apparent from the sample nam
 
 
 IN3 has two different monochromators: a PG002 and a Cu monochromator.
-Considering the d-value of \SI{3.355}{\AA} used in the experiment, which can be extracted from the meta-data, it is clear that the PG002 monochromator was used.
+Considering the d-value of \SI{3.355}{\mbox{\AA}} used in the experiment, which can be extracted from the meta-data, it is clear that the PG002 monochromator was used.
 In the same manner it was determined that the PG002 analyser was used. 
-Furthermore, the outgoing wave-number $k_f$ was fixed to \SI{2.66325}{\AA^{-1}}, which suggests the use of a PG filter. 
-The corresponding wavelength is $\lambda_f=\SI{2.359}{\AA}$.
+Furthermore, the outgoing wave-number $k_f$ was fixed to \SI{2.66325}{\mbox{\AA}^{-1}}, which suggests the use of a PG filter. 
+The corresponding wavelength is $\lambda_f=\SI{2.359}{\mbox{\AA}}$.
 
 The sample was cooled down to $T = \SI{1.6}{K}$, where all measurements were recorded. 
 This was probably done in the ``orange'' cryostat.
@@ -251,25 +219,6 @@ We also acknowledge the BTHA agency for providing us with financial support for 
 
 
 \bibliography{bibliography}
-
-%\begin{thebibliography}{9}
-
-%\bibitem{plos} Molloy, Jennifer C., The Open Knowledge Foundation: Open Data Means Better Science, PLOS Biology 9 pages 1-4 (2011), \url{https://doi.org/10.1371/journal.pbio.1001195}
-%\bibitem{sharing} Fischer, B.A., Zigmond, M.J. The Essential Nature of Sharing in Science. Sci Eng Ethics 16, 783–799 (2010), \url{https://doi.org/10.1007/s11948-010-9239-x}
-%\bibitem{panosc} The Photon and Neutron Open Science Cloud (PaNOSC), \url{https://www.panosc.eu/}
-%\bibitem{nfdi} National research data infrastructure (NFDI), \url{https://www.dfg.de/en/research_funding/programmes/nfdi/index.html}
-%\bibitem{expands} European Open Science Cloud (EOSC) Photon and Neutron Data Service (ExPaNDS), \url{https://expands.eu/}
-%\bibitem{FAIR} FAIR principles, \url{https://www.go-fair.org/fair-principles/}
-%\bibitem{arXiv} arXiv.org, \url{https://arxiv.org/}
-%\bibitem{figshare} figshare, \url{https://figshare.com/}
-%\bibitem{IN3} IN3, \url{https://www.ill.eu/users/instruments/instruments-list/in3/description/instrument-layout/}
-%\bibitem{foster} Foster Open Data, \url{https://www.fosteropenscience.eu/}
-%\bibitem{mini-school} Czech-Bavarian mini-school on large scale facilities and open data \url{https://mini-school.eu/}
-%\bibitem{data} 
-%STEFFENS Paul; DELLEA Greta; DENG Yue; DIETL Christopher; DJURADO David; GAMBINO Marianna; HEPTING Matthias; INKINEN JUHO; JAFARI Atefeh; LEFRANCOIS Emilie; LOPES SELVATI Ana Carolina; PANAHI Hamed; PEDERSEN Martin Nors; PRADIP Ramu; RANIERI Umbertoluca; ROSSI Matteo; SCHATTE Sarah; STANA Markus; TIMOSENKO Janis; VONESHEN David and ZBIRI Mohamed. (2014). HSC17 Hercules practical course. Institut Laue-Langevin (ILL) doi:10.5291/ILL-DATA.TEST-2385 \url{doi:10.5291/ILL-DATA.TEST-2385}
-%\bibitem{Aouissi} Aouissi, M. and Hamdi, I. and Meskini, N. and Qteish, A; Phonon spectra of diamond, Si, Ge, and $\alpha$-Sn: Calculations with real-space interatomic force constants; Phys. Rev. B, 74(5), 054302 (2006)
-%\end{thebibliography}
-
 
 \end{document}
 %
